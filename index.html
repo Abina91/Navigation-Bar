@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">Matrix</a>
+        </div>
+        <ul>
+            <li> <a href="#home">HOME</a></li>
+            <li> <a href="#about">ABOUT</a></li>
+            <li> <a href="#education">EDUCATION</a></li>
+            <li> <a href="#portfolio">SKILLS</a></li>
+            <li> <a href="#certifications">CERTIFICATIONS</a></li>
+            <li> <a href="#project">PROJECTS</a></li>
+            <li> <a href="#contact-info">CONTACT</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+    
+</body>
+
+<script>
+    const menu = document.querySelector('menu')
+    const menuList = document.querySelector('nav ul')
+    menu.addEventListener('click',()=>{
+        menuList.classList.toggle('showmenu')
+    })
+</script>
+</html>
